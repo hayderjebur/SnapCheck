@@ -1,9 +1,10 @@
-const express = require('express');
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
+const port = process.env.PORT || 3001;
 
-const app = express();
+server.use(middlewares);
+server.use(router);
 
-const PORT = process.env.PORT || 5000;
-app.listen(
-  PORT,
-  console.log(`Server running in ${process.env.NODE_ENV} mood on port ${PORT}`)
-);
+server.listen(port);

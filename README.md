@@ -7,3 +7,5 @@ the client side:
 Json-server side:
 1- run : npm install
 2- npm run json:server
+
+* you can enter any username and password to login 

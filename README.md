@@ -5,4 +5,5 @@ the client side:
 2- run : npm start
 
 Json-server side:
-1- npm run json:server
+1- run : npm install
+2- npm run json:server
